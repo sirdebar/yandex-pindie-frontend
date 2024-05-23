@@ -1,0 +1,14 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .title {
+    font-size: 10rem;
+    color: #ff0000;
+  }
+  
+  .subtitle {
+    font-size: 2rem;
+    color: #777;
+  }
