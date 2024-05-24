@@ -6,4 +6,4 @@ export const endpoints = {
   me: `${BASE_URL}/me`,
 }; 
 
-// added url
+// added urls
