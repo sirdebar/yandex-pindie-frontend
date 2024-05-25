@@ -35,6 +35,10 @@
   font-size: 22px;
 }
 
+.form__message {
+  margin-bottom: 20px;
+}
+
 .form__actions {
   display: flex;
   justify-content: center;
@@ -88,7 +92,3 @@
   opacity: .5;
   pointer-events: none;
 }
-
-.form__message {
-  margin-bottom: 20px;
-} 

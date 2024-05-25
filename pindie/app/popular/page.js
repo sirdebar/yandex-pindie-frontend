@@ -1,14 +1,15 @@
-"use client"
+'use client';
 
+import { endpoints } from "@/app/api/config";
+import { useGetDataByCategory } from "@/app/api/api-hooks";
 import { CardsListSection } from "../components/CardsListSection/CardsListSection";
-import { endpoints } from '../api/config';
-import { useGetDataByCategory } from '../api/api-hooks';
+import { Preloader } from "@/app/components/Preloader/Preloader";
 
 export default function New() {
-    const popularGames = useGetDataByCategory(endpoints.games, "popular");
-    return (
-        <main className='main-inner'>
-            <CardsListSection id='popular' title='Популярное' data={popularGames}/>
-        </main>
-    )
+  const popularGames = useGetDataByCategory(endpoints.games, "popular");
+  return (
+    <main className="main-inner">
+      {popularGames ? <CardsListSection id="popular" title="Популярные" data={popularGames} /> : <Preloader />}
+    </main>
+  );
 }
