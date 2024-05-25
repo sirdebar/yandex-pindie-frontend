@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { endpoints } from "@/app/api/config";
 import { useGetDataByCategory } from "@/app/api/api-hooks";

@@ -1,13 +1,11 @@
-import React from 'react';
-import styles from './GameNotFound.module.css';
+import Styles from './GameNotFound.module.css';
+import {NotFoundImage} from './not-found.jsx';
 
 export const GameNotFound = () => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>404</h1>
-      <p className={styles.subtitle}>Мы старались, но найти страницу не смогли...</p> <br></br>Может попробуете еще раз?
+    <div className={Styles["not-found"]}>
+      <NotFoundImage />
+      <h2 className={Styles["not-found__text"]}>Такой игры не существует :(</h2>
     </div>
-  );
-}
-
-
+  )
+};
